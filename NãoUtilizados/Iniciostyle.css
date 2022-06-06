@@ -11,15 +11,20 @@ h3{
     cursor: pointer;
 }
 
+.main-heading {
+    text-shadow: 2px 2px 25px black;
+}
+
 .conteudo{
-    background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)), url(imagens/HarryVSVoldemort.jpg);
+    /* background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)); */
+    background-image: url("../Imagens/img-fundohp.jpg");
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 100vh;
 }
 
-.menu{
+.menu-navegação{
     width: 85%;
     margin: auto;
     padding: 35px 0;
@@ -28,20 +33,20 @@ h3{
     justify-content: space-between;
 }
 
-.menu ul li{
+.menu-navegação ul li{
     position: relative;
     list-style: none;
     display: inline-block;
     margin: 20px;
 }
 
-.menu ul li a{
+.menu-navegação ul li a{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-.menu ul li::after{
+.menu-navegação ul li::after{
     background: #817b29;
     content: '';
     width: 0;
@@ -52,7 +57,7 @@ h3{
     transition: 0.5s;
 }
 
-.menu ul li:hover::after{
+.menu-navegação ul li:hover::after{
     width: 100%;
 }
 
