@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dashboard/dashboardStyle.css">
+    <title>HARRY POTTER</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="people-circle-outline"></ion-icon></span>
+                        <span class="title">HARRY POTTER</span>
+                    </a> 
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="server-outline"></ion-icon></span>
+                        <span class="title">Votação</span>
+                    </a> 
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="exit-outline"></ion-icon></span>
+                        <span class="title">Sair</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Principal -->
+    <div class="main">
+        <div class="topbar">
+            <div class="toggle">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+
+            <!-- Imagem do Usuario -->
+            <div class="user">
+                <img src="../Imagens/LogoBrasãoHogwarts.png">
+            </div>
+        </div>
+
+        <!-- Graficos -->
+        <div class="cardBox">
+            <div class="card">
+                <div>
+                    <div class="numbers">1,504</div>
+                    <div class="cardName">Quiz Participados</div>
+                </div>
+                <div class="iconBx">
+                    <ion-icon name="eye-outline"></ion-icon>
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <div class="numbers">1,504</div>
+                    <div class="cardName">Quantidade Votos</div>
+                </div>
+                <div class="iconBx">
+                    <ion-icon name="eye-outline"></ion-icon>
+                </div>
+            </div>
+
+            <!-- Lista de Dados -->
+           
+        </div>
+
+        <!-- <div class="details">
+            <div class="recentOrders"> -->
+                <div class="cardHeader">
+                    <h2>Vote no seu personagem favorito!</h2>
+                </div>
+
+                            <div class="imgVotacao">
+                                <br><br><br>
+
+                                <!-- COLOQUE AS IMAGENS AQUI  -->
+                                <div class="imagens">
+                                <img src="../Imagens/HarryFotoPerfil.jpg" alt="Voto1">
+                                <img src="../Imagens/LordVoldemortFotoPerfil.jpg" alt="VOTO2">
+                                <img src="../Imagens/SnapeFotoPerfil.jpg" alt="VOTO3">
+                                <img src="../Imagens/DumbledoreFotoPerfil.webp" alt="VOTO4">
+                                <img src="../Imagens/HagridFotoPerfil.webp" alt="VOTO5">
+                            </div>
+
+                            </div> 
+
+
+            </div>
+        </div>
+    </div>
+
+
+<!-- Animação do menu -->
+<script>
+let toggle = document.querySelector('.toggle');
+let navigation = document.querySelector('.navigation');
+let main = document.querySelector('.main');
+
+toggle.onclick = function(){
+    navigation.classList.toggle('active')
+    main.classList.toggle('active')
+
+}
+
+
+</script>
+
+
+
+<!-- scripts dos icones do site Ionicons -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+<!-- //Adicionando class do hovered e selecionando itens da lista --> -->
+
+</body>
+</html>

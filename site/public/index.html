@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!--Section Header começa-->
+    <!--Aqui é a parte de cima da minha pagina web, onde fica a logo, home, etc...-->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="Imagens/LogoBrasãoHogwarts.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre Nós</a>
+            <a href="#menu">Produtos</a>
+            <a href="#products">Casas</a>
+            <a href="#review">Avaliação dos Usuários</a>
+            <a href="#contact">Fale Conosco</a>
+            <a href="#blogs">blogs</a>
+            <a href="login.html">Login</a>
+            <a href="cadastro.html">Cadastre-se</a>
+        </nav>
+
+        <!--Aqui são os ícones de pesquisa, do carrinho e a barra-->
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <!--Aqui fica o placeholder da input(ícone de pesquisa)-->
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Procurar aqui...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+        <!--Nessa div temos os produtos que o usuário colocará no carrinho, ainda precisa
+        de alguns ajustes...-->
+        <div class="cart-itens-container">
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="Imagens/Varinha-Harry.png" alt="">
+                <div class="content">
+                    <h3>Cart item 01</h3>
+                    <div class="price">R$50.99/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="Imagens/VarinhaHarryPotter.png" alt="">
+                <div class="content">
+                    <h3>Cart item 02</h3>
+                    <div class="price">R$50.99/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="Imagens/VarinhaDracoMalfoy.webp" alt="">
+                <div class="content">
+                    <h3>Cart item 03</h3>
+                    <div class="price">R$50.99/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="Imagens/Varinha-Harry.png" alt="">
+                <div class="content">
+                    <h3>Cart item 04</h3>
+                    <div class="price">R$50.99/-</div>
+                </div>
+            </div>
+            <a href="#" class="btn">Verificar agora</a>
+        </div>
+
+
+    </header>
+    <!--Section Header termina-->
+
+    <!--Home Section Começa-->
+    <!--Na Section Home terei apenas a frase de impacto e o botão para o usuário se cadastrar, bem curtinha.-->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Faça parte do universo onde tudo é possivel!</h3>
+            <p>Há muitos tipos de valentia. É preciso muita coragem para lutar contra nossos inimigos,
+                 mas é preciso o mesmo valor para fazer o mesmo com os amigos.</p>
+            <a href="cadastro.html" class="btn">Cadastre-se Agora!!!</a>
+        </div>
+    </section>
+    <!--Home Section Termina-->
+
+    <!--About Section Começa-->
+    <section class="sobre" id="sobre">
+
+        <h1 class="heading"> <span>Sobre</span> Nós </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="Imagens/HarryVSVoldemort.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <h3>O que faz a nossa pagina ser especial?</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Saepe nisi ipsa consequuntur placeat iure cupiditate sed nam in veritatis,
+                    aperiam eum explicabo maxime asperiores suscipit quo rerum accusantium perspiciatis ut.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Accusamus, magni odit deleniti enim quae officia expedita quaerat maiores rerum voluptas.</p>
+                <a href="cadastro.html" class="btn">Saber mais a respeito...</a>
+            </div>
+
+        </div>
+    </section>
+    <!--About Section Termina-->
+
+    <!--Menu section Começa-->
+    <section class="menu" id="menu">
+
+        <h1 class="heading">Nossos <span>Produtos</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="Imagens/VarinhaHarryPotter.png" alt="">
+                <h3>Varinha Harry Potter</h3>
+                <div class="price">R$40.99 <span>R$60.99</span></div>
+                <a href="#" class="btn">Adiconar ao carrinho</a>
+            </div>
+
+            <div class="box">
+                <img src="Imagens/Varinha-Harry.png" alt="">
+                <h3>Varinha Hermione</h3>
+                <div class="price">R$40.99 <span>R$60.99</span></div>
+                <a href="#" class="btn">Adiconar ao carrinho</a>
+            </div>
+
+            <div class="box">
+                <img src="Imagens/VarinhaLordVoldemort.png" alt="">
+                <h3>Varinha Lord Voldemort</h3>
+                <div class="price">R$70.99 <span>R$100.99</span></div>
+                <a href="#" class="btn">Adiconar ao carrinho</a>
+            </div>
+
+            <div class="box">
+                <img src="Imagens/VarinhadasVarinhas.png" alt="">
+                <h3>A varinha das varinhas</h3>
+                <div class="price">R$100.99 <span>R$130.99</span></div>
+                <a href="#" class="btn">Adiconar ao carrinho</a>
+            </div>
+
+            <div class="box">
+                <img src="Imagens/VarinhaDracoMalfoy.webp" alt="">
+                <h3>Varinha Draco Malfoy</h3>
+                <div class="price">R$40.99 <span>R$60.99</span></div>
+                <a href="#" class="btn">Adiconar ao carrinho</a>
+            </div>
+
+            <div class="box">
+                <img src="Imagens/VarinhaAlvoDumbledore.png" alt="">
+                <h3>Varinha Dumbledore</h3>
+                <div class="price">R$90.99 <span>R$100.99</span></div>
+                <a href="#" class="btn">Adiconar ao carrinho</a>
+            </div>
+
+        </div>
+    </section>
+    <!--Menu section Termina-->
+
+
+<!--Products Section Começa-->
+    <section class="products" id="products">
+
+        <h1 class="heading">Nossas <span>Casas</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="Imagens/Gryffindor-Simbolo.gif" alt="">
+                </div>
+                <div class="content">
+                    <h3>Grifinória</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="Imagens/Revenclaw-Simbolo.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Corvinal</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="Imagens/Slytherin-Simbolo.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Sonserina</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="Imagens/Hufflepuff-Simbolo.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Lufa-Lufa</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!--Products Section Termina-->
+
+    <!--Review Section Começa-->
+    <section class="review" id="review">
+
+        <h1 class="heading">Avaliação dos <span>Usuários</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="Imagens/quote-img.png" alt="" class="quote">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Libero maxime asperiores culpa, minus quas harum blanditiis, 
+                    aperiam commodi rerum, pariatur in possimus tempora eos! Accusamus 
+                    porro perspiciatis voluptate ipsum consequatur.</p>
+                    <img src="Imagens/UsuarioPerfil-1.png" class="user" alt="">
+                    <h3>Fernando Mortaia</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagens/quote-img.png" alt="" class="quote">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Libero maxime asperiores culpa, minus quas harum blanditiis, 
+                    aperiam commodi rerum, pariatur in possimus tempora eos! Accusamus 
+                    porro perspiciatis voluptate ipsum consequatur.</p>
+                    <img src="Imagens/UsuarioPerfil-2.png" class="user" alt="">
+                    <h3>Thays Cardoso</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagens/quote-img.png" alt="" class="quote">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Libero maxime asperiores culpa, minus quas harum blanditiis, 
+                    aperiam commodi rerum, pariatur in possimus tempora eos! Accusamus 
+                    porro perspiciatis voluptate ipsum consequatur.</p>
+                    <img src="Imagens/UsuarioPerfil-3.png" class="user" alt="">
+                    <h3>Almir Pereira</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+            </div>
+        </div>
+
+    </section>
+    <!--Review Section Termina-->
+
+    <!--Contact Section Começa-->
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>Fale</span> Conosco</h1>
+
+        <div class="row">
+            
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.795658279007!2d72.
+            82321486368825!3d19.
+            141649671202984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+            1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari
+            %20West%2C%20Bombaim%2C%20Maharashtra%20400047%2C%20%C3%8Dndia!5e0!3m2!1spt-BR!
+            2sbr!4v1653523760752!5m2!1spt-BR!2sbr"referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <form action="">
+                <h3>Fale Conosco</h3>
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="number" placeholder="Number">
+                </div>
+                <input type="submit" value="Contate Agora" class="btn">
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!--Contact Section Termina-->
+
+    <!--Blogs Section Começa-->
+
+    <section class="blogs" id="blogs">
+
+        <h1 class="heading">Nossos <span>Blogs</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="Imagens/ImagemBlog1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Aventura e Magia no mesmo lugar</a>
+                    <span>Pelo adm / 30 janeiro, 2021</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, impedit.</p>
+                    <a href="#" class="btn">Ler mais</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="Imagens/ImagemBlog2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Direto ao ponto</a>
+                    <span>Pelo adm / 12 abril, 2021</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, impedit.</p>
+                    <a href="#" class="btn">Ler mais</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="Imagens/ImagemBlog3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Muita diversidade de produtos</a>
+                    <span>Pelo adm / 21 de maio, 2022</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, impedit.</p>
+                    <a href="#" class="btn">Ler mais</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Blogs Section Termina-->
+
+    <!--Footer Section Começa-->
+
+    <section class="footer">
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-whatsapp"></a>
+        </div>
+
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre Nós</a>
+            <a href="#menu">Produtos</a>
+            <a href="#products">Casas</a>
+            <a href="#review">Avaliação dos Usuários</a>
+            <a href="#contact">Fale Conosco</a>
+            <a href="#blogs">blogs</a>
+        </div>
+
+        <div class="credit">Criado por <span>Fernando Mortaia</span> | all rights reserved</div>
+
+    </section>
+
+    <!--Footer Section Termina-->
+
+
+
+    <script src="JavaScript/script.js"></script>
+
+</body>
+
+</html>
