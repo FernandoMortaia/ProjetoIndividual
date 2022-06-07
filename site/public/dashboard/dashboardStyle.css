@@ -18,7 +18,7 @@
 body
 {
     min-height: 100vh;
-    overflow-x: hidden;
+
 }
 
 .container
@@ -382,9 +382,10 @@ body
 } 
 
 /* GRAFICOS */
-.chartJs
-{
-    position: relative;
-    height: 40vh;
-    width: 40vw;
+
+.graph{
+    margin-top: 65rem;
+    margin-right: 12rem;
+    width: 900px;
+    height: 900px;
 }

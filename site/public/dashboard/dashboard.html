@@ -93,7 +93,12 @@
                                 <img src="../Imagens/HagridFotoPerfil.webp" alt="VOTO5">
                             </div>
 
-                            </div> 
+                            <div class="graph">
+                                <canvas id="canvas_grafico"></canvas>
+                            </div>
+                            
+
+                            
 
 
             </div>
@@ -127,3 +132,65 @@ toggle.onclick = function(){
 
 </body>
 </html>
+<script>
+    window.onload = obterDadosGrafico(1);
+     function obterDadosGrafico(idAquario) {
+
+        fetch(`/medidas/ultimas/${idAquario}`, { cache: 'no-store' }).then(function (response) {
+            if (response.ok) {
+                response.json().then(function (resposta) {
+                    console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+                    resposta.reverse();
+
+                    plotarGrafico(resposta, idAquario);
+                });
+            } else {
+                console.error('Nenhum dado encontrado ou erro na API');
+            }
+        })
+            .catch(function (error) {
+                console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+            });
+    }
+
+    function plotarGrafico(resposta, idAquario) {
+        console.log('iniciando plotagem do gráfico...');
+
+        var dados = {
+            labels: [],
+            datasets: [
+                {
+                    label: 'Votos até o momento',
+                    borderColor: '#093028',
+                    backgroundColor: '#237A57',
+                    fill: true,
+                    data: []
+                }
+            ]
+        };
+
+        for (i = 0; i < resposta.length; i++) {
+            var registro = resposta[i];
+            dados.labels.push(registro.momento);
+            dados.datasets[0].data.push(registro.umidade);
+        }
+
+        console.log(JSON.stringify(dados));
+
+        var ctx = canvas_grafico.getContext('2d');
+        window.grafico_linha = new Chart(ctx, {
+            type: "bar",
+            data: dados,
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }
+                    ],
+                }
+            }
+        });
+    }
+</script>

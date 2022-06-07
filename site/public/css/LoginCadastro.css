@@ -57,6 +57,10 @@ section .container .user .imgBx img{
     object-fit: cover;
 }
 
+.formBx {
+    flex-direction: column;
+}
+
 section .container .user .formBx{
     position: relative;
     width: 50%;
@@ -93,7 +97,7 @@ section .container .user .formBx input{
     letter-spacing: 1px;
     font-weight: 300;
 }
-section .container .user .formBx input[type="submit"]{
+section .container .user .formBx button{
     max-width: 100px;
     background: #677eff;
     color: #fff;
@@ -104,7 +108,7 @@ section .container .user .formBx input[type="submit"]{
     transition: 0.5s;
 }
 
-section .container .user.signupBx .formBx input[type="submit"]{
+section .container .user.signupBx .formBx button{
     background: #e73e45;
 }
 
